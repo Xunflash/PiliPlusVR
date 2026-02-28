@@ -5,7 +5,7 @@
 
 
 <div align="center">
-    <h1>PiliPlus</h1>
+    <h1>PiliPlus VR Enhanced</h1>
 <div align="center">
     
 ![GitHub repo size](https://img.shields.io/github/repo-size/bggRGjQaUbCoE/PiliPlus) 
@@ -32,6 +32,7 @@
 - [x] Pad
 - [x] Windows
 - [x] Linux
+- [x] VR
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/piliplus.svg)](https://repology.org/project/piliplus/versions)
 
@@ -219,12 +220,11 @@
 
 ## 声明
 
-此项目（PiliPlus）是个人为了兴趣而开发，仅用于学习和测试，请于下载后24小时内删除。
+此项目（PiliPlus VR Enhanced）是个人为了兴趣和VR适配而开发，仅用于学习和测试，请于下载后24小时内删除。
 所用API皆从官方网站收集，不提供任何破解内容。
 在此致敬原作者：[guozhigq/pilipala](https://github.com/guozhigq/pilipala)
 在此致敬上游作者：[orz12/PiliPalaX](https://github.com/orz12/PiliPalaX)
-本仓库做了更激进的修改，感谢原作者的开源精神。
-
+在此致敬上游作者：[bggRGjQaUbCoE/PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)
 感谢使用
 
 
