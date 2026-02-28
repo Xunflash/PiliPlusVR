@@ -1,0 +1,9 @@
+version: "1"
+rules:
+  - base: main  # 你的分支名（通常是 main 或 master）
+    upstream: bggRGjQaUbCoE:main # 修改为上游的 [用户名]:[分支名]
+    mergeMethod: merge 
+    mergeUnstable: false 
+    
+    # 可选：如果发生冲突，给 PR 加上标签提醒你
+    conflictLabel: "merge-conflict"
