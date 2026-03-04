@@ -1342,6 +1342,10 @@ class _PLVideoPlayerState extends State<PLVideoPlayer>
         plPlayerController.updatePreviewIndex(newPos ~/ 1000);
       }
     } else if (_gestureType == GestureType.right) {
+      if (!plPlayerController.enableSlideVolumeBrightness) {
+        return;
+      }
+
       final double level = maxHeight * 0.5;
       EasyThrottle.throttle(
         'setVolume',
