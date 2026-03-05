@@ -42,17 +42,18 @@ jobs:
       - name: Build ARM64 APK
         run: flutter build apk --release --target-platform android-arm64
 
-      - name: Get version from pubspec
-        id: version
+      - name: Get upstream latest release version
+        id: upstream_version
         run: |
-          VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //')
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          UPSTREAM_VERSION=$(curl -s "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest" | grep '"tag_name":' | sed -E 's/.*"tag_name": "([^"]+)".*/\1/')
+          echo "version=$UPSTREAM_VERSION" >> $GITHUB_OUTPUT
+          echo "Upstream version: $UPSTREAM_VERSION"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ steps.version.outputs.version }}
-          name: v${{ steps.version.outputs.version }}
+          tag_name: ${{ steps.upstream_version.outputs.version }}
+          name: ${{ steps.upstream_version.outputs.version }}
           body: "Auto-built from upstream sync"
           files: build/app/outputs/flutter-apk/app-release.apk
           make_latest: true
