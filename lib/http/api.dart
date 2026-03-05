@@ -410,8 +410,9 @@ abstract final class Api {
   static const String blackLst = '/x/relation/blacks';
 
   // github 获取最新版
+  // TODO: 替换为你自己的Github用户名和仓库名，以便App能检测到你发布的Release更新
   static const String latestApp =
-      'https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases';
+      'https://api.github.com/repos/Xunflash/PiliPlus/releases';
 
   // 多少人在看
   // https://api.bilibili.com/x/player/online/total?aid=913663681&cid=1203559746&bvid=BV1MM4y1s7NZ&ts=56427838
