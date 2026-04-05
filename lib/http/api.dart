@@ -831,6 +831,10 @@ abstract final class Api {
 
   static const String dynReserve = '/x/dynamic/feed/reserve/click';
 
+  static const String spaceReserve = '/x/space/reserve';
+
+  static const String spaceReserveCancel = '/x/space/reserve/cancel';
+
   static const String favPugv = '/pugv/app/web/favorite/page';
 
   static const String addFavPugv = '/pugv/app/web/favorite/add';
@@ -998,4 +1002,7 @@ abstract final class Api {
 
   static const String liveMedalWall =
       '${HttpString.liveBaseUrl}/xlive/web-ucenter/user/MedalWall';
+
+  static const String memberGuard =
+      '${HttpString.liveBaseUrl}/xlive/app-ucenter/v1/guard/MainGuardCardAll';
 }
